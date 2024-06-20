@@ -1,12 +1,5 @@
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
 const RedirectComponent = () => {
-    // useEffect(() => {
 
-
-    //     openApp();
-    // }, []);
     const openApp = () => {
         const now = new Date().getTime();
         setTimeout(() => {
