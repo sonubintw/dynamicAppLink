@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<RedirectComponent />} />
+        <Route path="/EProcess" element={<RedirectComponent />} />
 
       </Routes>
     </Router>
