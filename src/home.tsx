@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
+
 const Home = () => {
     return (
-        <div>home</div>
+        <Link to="EProcess">home</Link>
     )
 }
 

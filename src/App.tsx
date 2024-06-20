@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/EProcess" element={<RedirectComponent />} />
+        <Route path="/" element={<RedirectComponent />} />
+        <Route path="/EProcess" element={<Home />} />
       </Routes>
     </Router>
   );
