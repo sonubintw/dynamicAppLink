@@ -1,20 +1,29 @@
-const RedirectComponent = () => {
+import { useEffect } from 'react';
 
-    const openApp = () => {
-        const now = new Date().getTime();
-        setTimeout(() => {
-            if (new Date().getTime() - now < 2000) {
-                window.location.href = 'https://play.google.com/store/apps/details?id=com.singularitycredit.app';
-            }
-        }, 100);
-        window.location.href = 'eprocesses://';
-    };
+const RedirectComponent = () => {
+    useEffect(() => {
+        const openApp = () => {
+            const start = Date.now();
+            const timeout = setTimeout(() => {
+                if (Date.now() - start < 1500) {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.singularitycredit.app';
+                }
+            }, 1000);
+
+            const iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = 'eprocesses://';
+            document.body.appendChild(iframe);
+
+            window.onblur = () => clearTimeout(timeout);
+        };
+
+        openApp();
+    }, []);
 
     return (
         <div>
-            <button onClick={openApp}>
-                ...redirecting
-            </button>
+            <p>Redirecting...</p>
         </div>
     );
 };
