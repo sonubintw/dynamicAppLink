@@ -1,0 +1,16 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.singularitycredit.app",
+            "sha256_cert_fingerprints": [
+                "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+                "8F:0E:83:45:CC:E1:02:E2:78:AD:A2:73:A9:D8:DD:70:A6:60:67:38:46:2B:40:F2:F5:72:74:9B:EE:2B:19:79",
+                "46:DD:63:69:9B:25:60:95:36:74:40:81:78:F9:DC:A5:A3:59:8F:4B:10:1C:25:E6:DB:7C:D0:20:AC:75:46:AC"
+            ]
+        }
+    }
+]
